@@ -3,12 +3,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDa69BMdPqvwMqvW2YQlMis1NrRmPhINBA",
-  authDomain: "kwitter-website10.firebaseapp.com",
-  projectId: "kwitter-website10",
-  storageBucket: "kwitter-website10.firebasestorage.app",
-  messagingSenderId: "178419559592",
-  appId: "1:178419559592:web:d924b3904d27e96686669d"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 export const app = initializeApp(firebaseConfig);
